@@ -15,12 +15,9 @@ Other:
 		save execution time.  
 		
 Roadmap:  
-	* particles that change shape over time.  
-		* Implemented for particles that use blit directly, not for the OpenGl case.  
-	* particles that change color over time.  
-		* Alpha and or color, could be done by dynamically creating new images based off of a reference image.  
-	* For the direct blit method, it chokes at roughly 150 particles,  
-		* For the OpenGl approach, FastEmitter, it chokes in the 1500 paticles range.  
+	* particles that change shape over time. Implemented for particles that use blit directly, not for the OpenGl case.  
+	* particles that change color over time. Alpha and or color, could be done by dynamically creating new images based off of a reference image.  
+	* For the direct blit method, it chokes at roughly 150 particles.  For the OpenGl approach, FastEmitter, it chokes in the 1500 paticles range.  
 	
 	
 	
