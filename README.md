@@ -10,14 +10,12 @@ Features
 		
 Other:  
     * Slowest part, as always, is drawing the particles.  
-		FastEmitter uses OpenGl for a rouch 10x speed up over direct blit.  
+		FastEmitter uses OpenGl for a rough 10x speed up over direct blit.  
 		Limiting frame rate (even if only for the emitter) will  
 		save execution time.  
 		
 Roadmap:  
 	* particles that change shape over time. Implemented for particles that use blit directly, not for the OpenGl case.  
 	* particles that change color over time. Alpha and or color, could be done by dynamically creating new images based off of a reference image.  
-	* For the direct blit method, it chokes at roughly 150 particles.  For the OpenGl approach, FastEmitter, it chokes in the 1500 paticles range.  
-	
-	
+	* For the direct blit method, it chokes at roughly 150 particles.  For the OpenGl approach, FastEmitter, it chokes in the 1500 particles range.  
 	
