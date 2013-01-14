@@ -5,8 +5,11 @@ pyglet_particles2d
 
 Features  
 	* Works with python 2.7 and 3.3  
-	* Create Particles with an initial speed and direction, gravity, and/or zigzag movement pattern  
-	* Small memory footprint, instead of creating an object for each particle, only the creation time and number of particle is stored  
+	* Create Particles with an initial speed and direction, gravity, and/or zigzag movement pattern 
+    * Small memory footprint, instead of creating an object for each particle, only the creation time and number of particle is stored  	
+	* different emitter classes, to emit from a point, line or rectangluar region.
+	* Have the emitter follow a predefined path with an optional smoothing parameter
+	* and other emitter types...
 		
 Other:  
     * Slowest part, as always, is drawing the particles.  
