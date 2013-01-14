@@ -1,7 +1,7 @@
 pyglet_particles2d
 ==================
 
-2D Particles Demo with pyglet and Python 2/3
+2D Particles Demo with pyglet (1.2alpha1) and Python 2.7/3.3
 
 Features  
 	* Works with python 2.7 and 3.3  
@@ -17,5 +17,8 @@ Other:
 Roadmap:  
 	* particles that change shape over time. Implemented for particles that use blit directly, not for the OpenGl case.  
 	* particles that change color over time. Alpha and or color, could be done by dynamically creating new images based off of a reference image.  
-	* For the direct blit method, it chokes at roughly 150 particles.  For the OpenGl approach, FastEmitter, it chokes in the 1500 particles range. Some of my experiments show that past 1000 particles, the slowdown is no longer purley blitting.
+	* For the direct blit method, it chokes at roughly 150 particles.  For the OpenGl approach, FastEmitter, it chokes in the 1500 particles range. 
+		In one test using 1K particles; turning blit off runs at the same rate as the openGl FastEmitter. This seems to indicate that at that point the bottleneck is no longer in drawing the image.
+	   
+	   
 	
