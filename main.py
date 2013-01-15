@@ -1,4 +1,4 @@
-#! python3 -OO $this
+#! python -OO $this
 import pyglet
 from pyglet.gl import *
 import particles2D as P2D
@@ -30,13 +30,11 @@ class MainWindow(pyglet.window.Window):
         self.texture.anchor_y = self.texture.height//2
         self.emitter = P2D.PointEmitter(self.texture,x,y);
         self.emitter.set_fps(self.Fs)
-        self.emitter.set_rate(100,1)
-        self.emitter.set_direction(0,0);
-        self.emitter.set_gravity(270,.5);
-        self.emitter.set_speed(4,-2);
+        self.emitter.set_rate(100,(5,10))
+        self.emitter.set_direction(90,45);
+        self.emitter.set_gravity(270,3);
+        self.emitter.set_speed(2,.5);
         self.emitter.set_scale([1,1.5]);
-        self.emitter.set_lifetime(10000);
-        self.emitter.allowReverseDirection(False);
         
         
         self.fpsdisp = pyglet.clock.ClockDisplay();
@@ -159,7 +157,7 @@ class MainWindow(pyglet.window.Window):
         elif symbol == key._9:
             # zig zag particles in direction other than 0,90,180 or 270
             #self.emitter = P2D.LineEmitter(self.texture,.75*w,0,w,.25*h);
-            self.emitter = P2D.PointEmitter(self.texture,w,h);
+            self.emitter = P2D.PointEmitter(self.texture,w,0);
             self.emitter.set_fps(self.Fs)
             self.emitter.set_rate(250,1);    
             #self.emitter.set_rate(100,5);    
